@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Apply for a broadcasting job at BroadcastNova Inc. using this accessible, structured HTML5 form." />
+  <title>BroadcastNova Careers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+
+    header, main, footer {
+      padding: 1.5em;
+      background-color: #fff;
+    }
+
+    header {
+      background-color: #eef2f3;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    section {
+      margin: 2em 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5em;
+    }
+
+    form {
+      max-width: 650px;
+      margin: auto;
+      background-color: #fff;
+      padding: 1.5em;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 1em;
+      margin-bottom: 1.5em;
+    }
+
+    label {
+      display: block;
+      margin-top: 1em;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.25em;
+    }
+
+    figure {
+      margin: 1em 0;
+    }
+
+    .submit-btn {
+      margin-top: 1em;
+      background-color: #007bff;
+      color: white;
+      padding: 0.75em;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .submit-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>BroadcastNova Inc. Careers</h1>
+    <p>Your future in broadcasting starts here.</p>
+  </header>
+
+  <main>
+    <!-- Section: Job Roles -->
+    <section aria-labelledby="roles">
+      <h2 id="roles">Available Broadcast Positions</h2>
+      <ul>
+        <li>News Reporter</li>
+        <li>Video Editor</li>
+        <li>Radio Presenter</li>
+        <li>Digital Content Producer</li>
+      </ul>
+
+      <h3>How to Apply</h3>
+      <ol>
+        <li>Choose your desired role.</li>
+        <li>Fill out the application form.</li>
+        <li>Attach your resume and submit.</li>
+      </ol>
+    </section>
+
+    <!-- Section: Salary Table -->
+    <section aria-labelledby="salary">
+      <h2 id="salary">Salary Ranges</h2>
+      <table>
+        <caption>Monthly Salary Estimates</caption>
+        <thead>
+          <tr>
+            <th>Role</th>
+            <th>Salary Range</th>
+            <th>Experience Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>News Reporter</td>
+            <td>$2,500 - $4,000</td>
+            <td>Mid-Level</td>
+          </tr>
+          <tr>
+            <td>Video Editor</td>
+            <td>$2,000 - $3,800</td>
+            <td>Entry - Mid</td>
+          </tr>
+          <tr>
+            <td>Radio Presenter</td>
+            <td>$2,300 - $4,200</td>
+            <td>Mid-Level</td>
+          </tr>
+          <tr>
+            <td>Digital Content Producer</td>
+            <td>$2,000 - $3,500</td>
+            <td>Entry-Level</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section: Company Media -->
+    <section aria-labelledby="media">
+      <div style="text-align: center;">
+        <h2 id="media">About BroadcastNova Inc.</h2>
+        <figure>
+          <img src="./Teamwork at  NovaBroadcast.jpg" 
+               alt="BroadcastNova media team working in the studio"
+               style="width: 100%; max-width: 600px; height: auto; display: block; margin: 1em auto;" />
+          <figcaption style="text-align: center;">Our team in action — delivering real stories to the world</figcaption>
+        </figure>
+
+        <h3>Company Introduction Video</h3>
+        <video controls autoplay muted loop
+       style="width:100%; max-width:600px; display:block; margin:auto;">
+  <source src="./control-room showcase.mp4" type="video/mp4">
+  Sorry, your browser doesn’t support embedded videos.
+</video>
+
+      </div>
+    </section>
+
+    <!-- Section: Job Application Form -->
+    <section aria-labelledby="application">
+      <h2 style="text-align: center;" id="application">Job Application Form</h2>
+
+      <form action="#" method="post" enctype="multipart/form-data" novalidate>
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required placeholder="Jane Doe" autocomplete="name" minlength="3" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="example@email.com" autocomplete="email" />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required pattern="^\d{10}$" placeholder="10-digit number" />
+
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Professional Details</legend>
+
+          <label for="position">Position Applying For</label>
+          <select id="position" name="position" required>
+            <option value="">--Select a position--</option>
+            <option value="reporter">News Reporter</option>
+            <option value="editor">Video Editor</option>
+            <option value="presenter">Radio Presenter</option>
+            <option value="producer">Digital Content Producer</option>
+          </select>
+
+          <label for="experience">Years of Experience</label>
+          <input type="number" id="experience" name="experience" min="0" max="40" required placeholder="e.g., 3" />
+
+          <label for="resume">Upload Resume (PDF only)</label>
+          <input type="file" id="resume" name="resume" accept=".pdf" required />
+
+          <label for="linkedin">LinkedIn Profile (Optional)</label>
+          <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/username" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Information</legend>
+
+          <label for="cover">Cover Letter</label>
+          <textarea id="cover" name="cover" placeholder="Write your cover letter here..." rows="5" minlength="20" required></textarea>
+
+          <label>
+            <input type="checkbox" name="terms" required />
+            I confirm that the information provided is accurate.
+          </label>
+
+          <label for="referral">Referral Code</label>
+          <input type="text" id="referral" value="BROADCAST2025" readonly />
+        </fieldset>
+
+        <input type="submit" value="Submit Application" class="submit-btn" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align: center;">&copy; 2025 BroadcastNova Inc. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
